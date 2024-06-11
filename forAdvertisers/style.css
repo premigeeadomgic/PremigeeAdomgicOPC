@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* *::selection{
+    background: none;
+    cursor: not-allowed;
+} */
+
+.navbar{
+    width: 100%;
+    height: 170px;
+    position: fixed;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.navbar .logo{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    
+}
+
+.navbar .logo img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0 0  25px grey;
+}
+
+.navbar .menu{
+    float: right;
+}
+
+.navbar .menu nav ul.main_menu{
+    list-style-type: none;
+    display: inline-flex;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.navbar .menu nav ul.main_menu li{
+    padding: 10px;
+}
+
+.navbar .menu nav ul.main_menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.navbar .menu nav ul.main_menu li ul.submenu{
+    list-style-type: none;
+    margin-left: 0;
+    display: none;
+    position: fixed;
+}
+
+.navbar .menu nav ul.main_menu li.hov:hover ul.submenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.navbar .menu nav ul li{
+    transition: 0.6s ease-in-out;
+}
+
+
+section.welcome{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 170px;
+}
+
+section.welcome h1{
+    font-size: 30px;
+    color: #000;
+
+}
+
+section.welcome h1.active{
+    color: rgb(160, 0, 0);
+}
+
+
+
+
+section.contact .add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    color: #000;
+}
+
+section.contact .add .left_contact{
+    width: 60%;
+}
+
+section.contact .add .left_contact h1{
+    font-size: 36px;
+}
+
+section.contact .add .left_contact button{
+    width: 250px;
+    height: 45px;
+    background: none;
+    border: none;
+    background-color: rgb(203, 4, 4);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+section.contact .add .left_contact button:hover{
+    background-color: rgb(176, 4, 4);
+}
+
+section.contact .add .right_contact{
+    width: 60%;
+}
+
+section.contact .add .right_contact img{
+    height: 300px;
+    float: right;
+    width: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+
+section.who_benefit{
+    background: url(../img/who-benefit.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.who_benefit .benefits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+section.who_benefit .benefits .benefit_card{
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 10px;
+    border-radius: 20px;
+    /* box-shadow: 0 0 15px black; */
+}
+
+
+section.who_benefit .benefits .benefit_card h2{
+    color: rgb(101, 45, 255);
+}
+
+
+section.target_audience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+section.target_audience .left{
+    width: 50%;
+
+}
+
+section.target_audience .right{
+    width: 50%;
+}
+
+section.target_audience .left img{
+    height: 270px;
+    float: left;
+    width: auto;
+}
+
+section.targettwo{
+    flex-direction: row-reverse;
+}
+
+section.care .cards_care{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+section.care .care_card{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),linear-gradient(#e66465, #9198e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: aqua;
+    margin: 5px 5px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+section.care .care_card .card_image img{
+    width: 90px;
+    height: auto;
+}
+
+section.start .form{
+    width: 80%;
+    height: 300px;
+    background-color: rgb(178, 0, 0);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.start .form h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+section.start .form p{
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+}
+
+section.start .form button{
+    width: 30%;
+    height: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+section.start .form button:hover{
+    background-color: white;
+    color: #000;
+    opacity: 0.3;
+}
+
+section.topwala{
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    float: left;
+}
+
+.right{
+    width: 40%;
+    float: right;
+}
+
+
+
+
+footer{
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(255, 159, 159);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
