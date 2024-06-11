@@ -145,11 +145,15 @@ footer{
     text-align: center;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: darkgrey;
-}
 
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(255, 159, 159);
+    border-radius: 3px;
+}
 ::-webkit-scrollbar-thumb{
-    background-color: yellow;
+    background-color: red;
 }
