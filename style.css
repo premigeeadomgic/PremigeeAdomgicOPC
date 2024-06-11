@@ -73,7 +73,7 @@
 
 
 section.welcome{
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/welcome-gif.gif);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/welcome-gif.gif);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -90,7 +90,7 @@ section.welcome h1{
 }
 
 section.aboutus{
-    background: url(../img/aboutus.png);
+    background: url(img/aboutus.png);
     background-size: cover;
     background-position: center;
     color: #000;
