@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Premigee Adomgic Management Pvt Ltd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            cursor: pointer;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terms of Service</h1>
+
+    <div class="question" onclick="toggleAnswer('q1')">1. What is the name of your business?</div>
+    <div class="answer" id="q1">Premigee Adomgic Management Pvt Ltd</div>
+
+    <div class="question" onclick="toggleAnswer('q2')">2. What services does Premigee Adomgic Management Pvt Ltd provide?</div>
+    <div class="answer" id="q2">Premigee Adomgic Management Pvt Ltd provides advertising and marketing services to clients.</div>
+
+    <div class="question" onclick="toggleAnswer('q3')">3. What are the terms regarding user accounts and registration?</div>
+    <div class="answer" id="q3">Users can register for accounts by providing an email address, creating a password, specifying their brand name and type, and entering billing details.</div>
+
+    <div class="question" onclick="toggleAnswer('q4')">4. How does Premigee Adomgic Management Pvt Ltd handle payments and refunds?</div>
+    <div class="answer" id="q4">Premigee Adomgic Management Pvt Ltd accepts payments via Credit and Debit Cards, Wire transfer, UPI and QR Payments, Net Banking, and EMI. Refunds for unsuccessful transactions or cancellations are processed within T+2 days to the same payment method used. No refunds are issued for services already rendered.</div>
+
+    <div class="question" onclick="toggleAnswer('q5')">5. What are the user responsibilities and acceptable use policies?</div>
+    <div class="answer" id="q5">Users agree not to advertise content that is illegal or prohibited by law or deemed inappropriate by Premigee Adomgic Management Pvt Ltd. Users are fully responsible for the legality and accuracy of the content they advertise through our services. Violations may result in account suspension, and users forfeit any funds associated with the account.</div>
+
+    <div class="question" onclick="toggleAnswer('q6')">6. How does Premigee Adomgic Management Pvt Ltd handle termination of services or accounts?</div>
+    <div class="answer" id="q6">Premigee Adomgic Management Pvt Ltd reserves the right to suspend or terminate services or accounts at its discretion, especially in cases of policy violations or illegal activities. Users may appeal account decisions by contacting our support team.</div>
+
+    <div class="question" onclick="toggleAnswer('q7')">7. What is your policy regarding warranties and liabilities?</div>
+    <div class="answer" id="q7">Premigee Adomgic Management Pvt Ltd provides its services on an "as is" basis without warranties of any kind, whether express or implied. We disclaim any warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event shall Premigee Adomgic Management Pvt Ltd be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use or inability to use our services.</div>
+
+    <div class="question" onclick="toggleAnswer('q8')">8. How can users contact Premigee Adomgic Management Pvt Ltd for questions or support?</div>
+    <div class="answer" id="q8">Users can contact Premigee Adomgic Management Pvt Ltd for questions, support, or complaints by email at <a href="mailto:premijiadvt@gmail.com">premijiadvt@gmail.com</a>, by phone at +91 9810529339, or visit our physical address: 1/118 Block 1, Trilok Puri, Delhi 110091.</div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
