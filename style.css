@@ -124,7 +124,7 @@ section.welcome .about{
 }
 
 section.platforms{
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/platforms.webp);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/platforms.webp);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -198,7 +198,7 @@ section.query form input{
 
 
 section.contact{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/contact.avif);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(img/contact.avif);
     background-size: cover;
     height: 100vh;
     background-position: center;
